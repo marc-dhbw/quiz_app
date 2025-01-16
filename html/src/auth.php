@@ -12,7 +12,7 @@ require_once '../src/db.php';
 function auth($username,$password) : bool {
     $conn = getDBConnection();
 
-    $stmt = $conn->prepare("SELECT password_hash FROM users WHERE name = :username");
+    $stmt = $conn->prepare("SELECT password_hash FROM users WHERE username = :username");
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC); 

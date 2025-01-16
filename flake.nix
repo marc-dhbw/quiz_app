@@ -14,6 +14,7 @@
             devShell.${system} = pkgs.mkShell {
                 buildInputs = [ pkgs.docker-compose ];
                 shellHook = ''
+                    echo Hello devShell
                     docker-compose up -d
                 '';
             };

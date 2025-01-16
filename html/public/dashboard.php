@@ -14,7 +14,6 @@ include 'templates/header.php';
 echo '<h2>Welcome, ' . htmlspecialchars($_SESSION['user']) . '</h2>';
 ?>
     <main>
-    <!-- Will be used later
 
     <p>Show the best players</p>
     <a href="leaderboard.php"><button>Leaderboard</button></a>
@@ -23,7 +22,6 @@ echo '<h2>Welcome, ' . htmlspecialchars($_SESSION['user']) . '</h2>';
     <p>Show the question list with pagination</p>
     <a href="questions_pagination.php"><button>Questions with pagination</button></a>
 
-    -->
 
     <p>See you next time!</p>
     <a href="logout.php"><button>Logout</button></a>

@@ -46,12 +46,6 @@ include 'templates/header.php';
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Login</button>
-    </form>
-
-    <form method="POST" action="<?=($_SERVER['PHP_SELF'])?>">
-
-
-    </form>
 
 </main>
 
